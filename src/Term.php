@@ -20,7 +20,7 @@ use Namest\Sluggable\HasSlug;
  * @package Namest\Taxonomy
  *
  */
-abstract class Term extends Model
+class Term extends Model
 {
     use TermTrait, HasSlug;
 

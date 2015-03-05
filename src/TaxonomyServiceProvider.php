@@ -4,6 +4,7 @@ namespace Namest\Taxonomy;
 
 use Illuminate\Support\ServiceProvider;
 use Namest\Sluggable\SluggableServiceProvider;
+use Namest\Taxonomy\Console\Commands\MakeTaxonomy;
 
 /**
  * Class TaxonomyServiceProvider
@@ -38,5 +39,7 @@ class TaxonomyServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(new SluggableServiceProvider($this->app));
+
+        $this->commands(MakeTaxonomy::class);
     }
 }

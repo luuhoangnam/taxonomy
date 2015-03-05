@@ -35,8 +35,10 @@ php artisan migrate
 
 **Step 5**: Create taxonomies in your terminal by artisan command
 ```bash
-
+php artisan make:taxonomy Color
 ```
+
+This command will create a taxonomy in database and  make the `Color` model in app/Color.php to reflect that taxonomy.
 
 **Step 6**: Read API below and start _happy_
 
