@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74a0287b2f1618bb1f33f2ee97a645b7",
+    "hash": "1c447c3ea833109d6ac98b6912e63f01",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -319,6 +319,47 @@
             ],
             "description": "The Illuminate Support package.",
             "time": "2015-02-11 11:08:03"
+        },
+        {
+            "name": "namest/sluggable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luuhoangnam/sluggable.git",
+                "reference": "990917bb2467ff238aa1a7197a51fe179236be96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luuhoangnam/sluggable/zipball/990917bb2467ff238aa1a7197a51fe179236be96",
+                "reference": "990917bb2467ff238aa1a7197a51fe179236be96",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/support": "~5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Namest\\Sluggable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luu Hoang Nam",
+                    "email": "hoangnam0705@icloud.com",
+                    "homepage": "http://luuhoangnam.com"
+                }
+            ],
+            "time": "2015-03-02 03:01:04"
         },
         {
             "name": "nesbot/carbon",
@@ -1388,7 +1429,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "namest/sluggable": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
