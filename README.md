@@ -21,3 +21,8 @@ echo $tag->slug;
 
 $childs = $tag->childs;
 ```
+
+```
+// Find tag has slug is 'new-tag'
+$tag = Tag::hasSlug('new-tag')->first();
+```
